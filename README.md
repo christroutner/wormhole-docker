@@ -1,15 +1,9 @@
-# insight-docker
-This repository contains a Dockerfile and bash shell scripts for building
-a Docker-based Bitpay Insight API server and bitcoin-abc v18.0 full node.
-This Dockerfile is based on
-[this gist](https://gist.github.com/christroutner/d43eebbe99e155b0558f97e450451124)
-walking through the setup of a BCH Insight server. At the moment, an Insight
-server is required by
-[rest.bitcoin.com](https://github.com/Bitcoin-com/rest.bitcoin.com)
-API server.
+# wormhole-docker
+This responsitory contains a Dockerfile and bash shell scripts for building
+a Wormhole full node on the Bitcoin Cash (BCH) network. By default, this node
+is setup for **testnet**, and the setup is based on
+[this tutorial](https://developer.bitcoin.com/tutorials/wormhole-2-full-node.html).
 
-Right now the Docker container targets BCH **testnet**. This repository may
-be expanded in the future to cover mainnet.
 
 ## Installation
 These directions are geared at Ubuntu 18.04 OS with at least 2GB of RAM,
@@ -27,7 +21,7 @@ shows how to install Docker on a Ubuntu system.
 
 3. Clone this repository:
 
-`git clone https://github.com/christroutner/insight-docker && cd insight-docker`
+`git clone https://github.com/christroutner/wormhole-docker && cd wormhole-docker`
 
 * Create a `blockchain-data` directory in your home directory:
 

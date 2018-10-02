@@ -1,3 +1,2 @@
 #!/bin/bash
-docker stop insight-bch
-
+docker stop wormhole-node
