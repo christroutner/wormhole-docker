@@ -67,7 +67,7 @@ EXPOSE 18333
 
 
 # Switch to user account.
-#USER wormhole
+USER wormhole
 # Prep 'sudo' commands.
 #RUN echo 'password' | sudo -S pwd
 
