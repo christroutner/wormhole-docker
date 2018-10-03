@@ -2,7 +2,7 @@
 This repository contains a Dockerfile and bash shell scripts for building
 a Wormhole full node on the Bitcoin Cash (BCH) network. By default, this node
 is setup for **testnet**, and the setup is based on
-[this tutorial](https://developer.bitcoin.com/tutorials/wormhole-2-full-node.html).
+[this Bitcoin.com tutorial](https://developer.bitcoin.com/tutorials/wormhole-2-full-node.html).
 
 
 ## Installation
