@@ -40,7 +40,8 @@ RUN apt-get install -y build-essential libtool autotools-dev automake \
 
 # Testnet configuration file
 RUN mkdir /home/wormhole/.bitcoin
-COPY config/testnet-example/bitcoin.conf /home/wormhole/.bitcoin/bitcoin.conf
+#COPY config/testnet-example/bitcoin.conf /home/wormhole/.bitcoin/bitcoin.conf
+COPY config/mainnet-example/bitcoin.conf /home/wormhole/.bitcoin/bitcoin.conf
 
 # Clone the coppernet fork of the bitcoin-abc wormhole BCH full node
 RUN git clone https://github.com/copernet/wormhole.git
@@ -60,10 +61,10 @@ RUN make install
 VOLUME /home/wormhole/blockchain-data
 
 # Expose the different ports
-EXPOSE 3001
-EXPOSE 28331
-EXPOSE 18332
-EXPOSE 18333
+#EXPOSE 3001
+EXPOSE 28332
+EXPOSE 8332
+#EXPOSE 18333
 
 
 # Switch to user account.

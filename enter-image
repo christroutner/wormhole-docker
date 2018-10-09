@@ -1,2 +1,2 @@
 #!/bin/bash
-docker container run --name wormhole-node --rm -v ~/blockchain-data:/home/wormhole/blockchain-data -p 3001:3001 -p 18332:18332 -p 18333:18333 -it wormhole-node /bin/bash
+docker container run --name wormhole-node --rm -v ~/wh-blockchain-data:/home/wormhole/blockchain-data -p 8332:8332 -p 28332:28332 -it wormhole-node /bin/bash
