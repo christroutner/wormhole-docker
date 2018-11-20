@@ -1,4 +1,7 @@
 #!/bin/bash
 
 # Run the insight-bch Docker image
-docker container run --name wormhole-node -d -v ~/wh-blockchain-data:/home/wormhole/blockchain-data -p 8332:8332 -p 28332:28332 --rm wormhole-node
+# Mainnet
+#docker container run --name wormhole-node -d -v ~/wh-blockchain-data:/home/wormhole/blockchain-data -p 8332:8332 -p 28332:28332 --rm wormhole-node
+# Testnet
+docker container run --name wormhole-node -d -v ~/wh-blockchain-data:/home/wormhole/blockchain-data -p 18332:18332 -p 28331:28332 wormhole-node
